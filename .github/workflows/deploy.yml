@@ -4,8 +4,6 @@ on:
   push:
     branches: [main]
 
-# env:FIREBASE_API_KEY: ${{secrets.FIREBASE_API_KEY}}
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
