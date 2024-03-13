@@ -7,7 +7,7 @@ export const Services = () => {
       <motion.div className="textContainer">
         <motion.p>
           {" "}
-          I focus on helping your brand grow and move forward
+          I focus on helping your brand grow <br /> and move forward
         </motion.p>
         <hr />
       </motion.div>
