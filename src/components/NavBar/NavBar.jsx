@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 const NavBar = () => {
   return (
     <div className="navbar">
-      {/* Navbar */}
       <SideBar />
       <div className="wrapper">
         <motion.span
@@ -13,7 +12,7 @@ const NavBar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Lama Dev
+          Savchenko Elona
         </motion.span>
         <div className="social">
           <a href="#">
@@ -24,9 +23,6 @@ const NavBar = () => {
           </a>
           <a href="#">
             <img src="/youtube.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/dribbble.png" alt="" />
           </a>
         </div>
       </div>
