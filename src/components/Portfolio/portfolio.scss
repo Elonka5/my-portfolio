@@ -1,5 +1,23 @@
 @import "../../app.scss";
 
+$background-color-1: #2c363f;
+$background-color-2: #f2f5ea;
+$text-color-1: #2c363f;
+$text-color-2: #f2f5ea;
+
+.section {
+  @for $i from 1 through 4 {
+    &:nth-of-type(2n + #{$i}) {
+      background-color: if(
+        $i % 2 == 0,
+        $background-color-2,
+        $background-color-1
+      );
+      color: if($i % 2 == 0, $text-color-1, $text-color-2);
+    }
+  }
+}
+
 .portfolio {
   position: relative;
 

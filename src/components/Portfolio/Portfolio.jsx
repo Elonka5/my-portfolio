@@ -12,7 +12,7 @@ const items = [
   {
     id: 2,
     title: "Cinemania",
-    img: "https://res.cloudinary.com/delucxgla/image/upload/v1710316441/Cinemania_jbiozt.png",
+    img: "https://res.cloudinary.com/delucxgla/image/upload/v1710497818/Hero_bdfqu3.png",
     descr: "Team Project. Application for choosing a movie.",
   },
   {
@@ -43,13 +43,12 @@ const Single = ({ item }) => {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    // offset: ["start start", "end start"],
   });
 
   const y = useTransform(scrollYProgress, [0, 1], [-200, 200]);
 
   return (
-    <section>
+    <section className="section">
       <div className="container">
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>
