@@ -1,0 +1,77 @@
+@import "../../app.scss";
+
+.about {
+  height: 100%;
+  max-width: 1366px;
+  margin: auto;
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    .skillsContainer {
+      padding-top: 60px;
+    }
+  }
+
+  .aboutContainer {
+    // padding-top: 60px;
+    max-width: 630px;
+    // padding-bottom: 330px;
+
+    p {
+      color: gray;
+      font-size: 20px;
+    }
+
+    h2 {
+      margin-bottom: 28px;
+    }
+  }
+
+  .skillsList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 630px;
+    gap: 20px;
+
+    p {
+      color: gray;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #212429;
+      box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+      border-radius: 12px;
+      width: 110px;
+      height: 110px;
+      padding: 8px 0;
+    }
+
+    .imgWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 12px;
+      //   width: 90px;
+      //   height: 90px;
+      border-radius: 12px;
+      cursor: pointer;
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+}

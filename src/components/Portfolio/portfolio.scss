@@ -1,6 +1,37 @@
 @import "../../app.scss";
 
-$background-color-1: #2c363f;
+// $background-color-1: #2c363f;
+// $background-color-1: #291c3a;
+
+// $background-color-2: #f2f5ea;
+// $text-color-1: #2c363f;
+// $text-color-2: #f2f5ea;
+
+// .section {
+//   @for $i from 1 through 4 {
+//     &:nth-of-type(2n + #{$i}) {
+//       background-color: if(
+//         $i % 2 == 0,
+//         $background-color-2,
+//         $background-color-1
+//       );
+//       color: if($i % 2 == 0, $text-color-1, $text-color-2);
+//     }
+//   }
+// }
+
+// $background-gradient: radial-gradient(
+//   circle closest-side at center,
+//   #f99102 -192%,
+//   #171a1f
+// );
+$background-gradient: radial-gradient(
+  circle at bottom,
+  #f99102 -140%,
+  #f99102 -20%,
+  #171a1f 50%,
+  #171a1f 100%
+);
 $background-color-2: #f2f5ea;
 $text-color-1: #2c363f;
 $text-color-2: #f2f5ea;
@@ -8,15 +39,37 @@ $text-color-2: #f2f5ea;
 .section {
   @for $i from 1 through 4 {
     &:nth-of-type(2n + #{$i}) {
-      background-color: if(
+      background-image: if(
         $i % 2 == 0,
         $background-color-2,
-        $background-color-1
+        $background-gradient
       );
       color: if($i % 2 == 0, $text-color-1, $text-color-2);
     }
   }
 }
+
+// $background-gradient: radial-gradient(
+//   ellipse closest-side at center,
+//   #f99102 10%,
+//   #171a1f
+// );
+// $background-color-2: #f2f5ea;
+// $text-color-1: #2c363f;
+// $text-color-2: #f2f5ea;
+
+// .section {
+//   @for $i from 1 through 4 {
+//     &:nth-of-type(2n + #{$i}) {
+//       background-image: if(
+//         $i % 2 == 0,
+//         $background-color-2,
+//         $background-gradient
+//       );
+//       color: if($i % 2 == 0, $text-color-1, $text-color-2);
+//     }
+//   }
+// }
 
 .portfolio {
   position: relative;

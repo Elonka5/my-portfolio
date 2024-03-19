@@ -37,7 +37,7 @@ const NavBar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithubSquare style={{ width: "32px", height: "32px" }} />
+            <FaGithubSquare style={{ width: "46px", height: "46px" }} />
           </a>
         </div>
       </div>

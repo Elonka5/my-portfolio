@@ -13,7 +13,8 @@ const items = [
     id: 2,
     title: "Cinemania",
     img: "https://res.cloudinary.com/delucxgla/image/upload/v1710497818/Hero_bdfqu3.png",
-    descr: "Team Project. Application for choosing a movie.",
+    descr:
+      "The project is an application that allows users to browse and filter a large collection of movies. It includes features such as a homepage with trending movies, a catalog page for browsing and searching movies, and a 'My Library' page where users can save movies for later viewing.",
   },
   {
     id: 3,
