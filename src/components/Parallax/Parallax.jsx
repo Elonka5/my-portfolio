@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useRef } from "react";
 import "./parallax.scss";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -13,19 +14,16 @@ const Parallax = ({ type }) => {
   const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <div
-      className="parallax"
-      ref={ref}
-      style={{
-        background:
-          type === "services"
-            ? "linear-gradient(180deg, #111132, #0c0c1d)"
-            : "linear-gradient(180deg, #111132, #505064)",
-      }}
-    >
-      <motion.h1 style={{ y: yText }}>
-        {type === "services" ? "What We Do?" : "What we did?"}
-      </motion.h1>
+    <div className="parallax" ref={ref}>
+      <motion.h2 style={{ y: yText }}>
+        Do you ever find yourself starting work,
+        <br /> only to glance at the clock <br />
+        and realize it's already 7:00 PM?
+      </motion.h2>
+      <motion.p style={{ y: yText }}>
+        That's exactly how I feel when I'm deeply engrossed in crafting
+        websites.
+      </motion.p>
       <motion.div className="mountains"></motion.div>
       <motion.div
         className="planets"

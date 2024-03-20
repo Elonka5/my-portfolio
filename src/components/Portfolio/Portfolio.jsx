@@ -15,6 +15,8 @@ const items = [
     img: "https://res.cloudinary.com/delucxgla/image/upload/v1710497818/Hero_bdfqu3.png",
     descr:
       "The project is an application that allows users to browse and filter a large collection of movies. It includes features such as a homepage with trending movies, a catalog page for browsing and searching movies, and a 'My Library' page where users can save movies for later viewing.",
+    urlLive: "https://andre29839.github.io/error-404_team_name_not_found/",
+    urlCode: "https://github.com/Andre29839/error-404_team_name_not_found",
   },
   {
     id: 3,
@@ -22,6 +24,8 @@ const items = [
     img: "https://res.cloudinary.com/delucxgla/image/upload/v1710316558/Money_Guard_tdkosr.png",
     descr:
       "An application for keeping records of home accounting.The application helps to keep track of your income and expenses, to receive exchange rates.",
+    urlLive: "https://andre29839.github.io/Props_Patrol/login",
+    urlCode: "https://github.com/Andre29839/Props_Patrol",
   },
   {
     id: 4,
@@ -29,13 +33,17 @@ const items = [
     img: "https://res.cloudinary.com/delucxgla/image/upload/v1710316599/water_tracker_user_tsefbw.jpg",
     descr:
       "The Water Tracker App is a user-friendly application designed to help individuals monitor and record their daily water intake.",
+    urlLive: "https://yurii2007.github.io/water-tracker/",
+    urlCode: "https://github.com/yurii2007/water-tracker",
   },
   {
     id: 5,
     title: "Learn Lingo",
     img: "https://res.cloudinary.com/delucxgla/image/upload/v1710316649/Learn_Lingo_u5ovqq.png",
     descr:
-      "An application for keeping records of home accounting.The application helps to keep track of your income and expenses, to receive exchange rates.",
+      "LearnLingo is an application of a company that provides online language learning services. The main purpose of the application is to help users find and choose a suitable teacher for their educational needs.",
+    urlLive: "https://elonka5.github.io/learn-lingo/",
+    urlCode: "https://github.com/Elonka5/learn-lingo",
   },
 ];
 
@@ -49,7 +57,7 @@ const Single = ({ item }) => {
   const y = useTransform(scrollYProgress, [0, 1], [-200, 200]);
 
   return (
-    <section className="section">
+    <section id="Portfolio">
       <div className="container">
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>
@@ -58,7 +66,14 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.descr}</p>
-            <button>See Demo</button>
+            <div className="linksWrapper">
+              <a href={item.urlLive} target="_blank" rel="noopener noreferrer">
+                See Demo
+              </a>
+              <a href={item.urlCode} target="_blank" rel="noopener noreferrer">
+                View Code
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>

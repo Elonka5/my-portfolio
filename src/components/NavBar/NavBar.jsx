@@ -22,22 +22,29 @@ const NavBar = () => {
             href="https://www.facebook.com/Elon4ik?locale=uk_UA"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="link to Facebook"
           >
-            <FaFacebook />
+            <FaFacebook tabindex="0" className="focus" />
           </a>
           <a
             href="https://www.linkedin.com/in/elona-savchenko-a9a2b586/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="link to Linkedin"
           >
-            <BsLinkedin />
+            <BsLinkedin tabindex="0" className="focus" />
           </a>
           <a
             href="https://github.com/Elonka5"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="link to GitHub"
           >
-            <FaGithubSquare style={{ width: "46px", height: "46px" }} />
+            <FaGithubSquare
+              style={{ width: "46px", height: "46px" }}
+              tabindex="0"
+              className="focus"
+            />
           </a>
         </div>
       </div>

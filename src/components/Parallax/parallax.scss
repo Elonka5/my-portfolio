@@ -7,15 +7,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 28px;
   overflow: hidden;
+  background-image: radial-gradient(
+    circle at bottom,
+    #f99102 -140%,
+    #f99102 -90%,
+    #171a1f 50%,
+    #171a1f 100%
+  );
 
-  h1 {
-    font-size: 100px;
+  h2 {
+    color: #f2f5ea;
+    font-size: 24px;
+    text-align: center;
+    margin-top: -42px;
+    text-transform: uppercase;
 
     @include mobile {
-      font-size: 72px;
-      text-align: center;
+      font-size: 22px;
     }
+  }
+
+  p {
+    font-size: 18px;
+    text-align: center;
+    color: #f2f5ea;
+    font-style: italic;
   }
 
   .mountains {
@@ -34,7 +53,7 @@
   }
 
   .planets {
-    background-image: url("/planets.png");
+    background-image: url("/sun.png");
     background-size: cover;
     background-position: bottom;
     width: 100%;

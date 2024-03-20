@@ -33,7 +33,6 @@ const ToggleButton = ({ setOpen }) => {
           }}
         />
       </svg>
-      {/* <GiHamburgerMenu /> */}
     </button>
   );
 };

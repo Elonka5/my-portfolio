@@ -11,8 +11,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // background-color: rebeccapurple;
-
     padding: 0 30px;
     height: 100%;
 
@@ -24,6 +22,10 @@
     span {
       font-weight: bold;
       color: white;
+
+      @include mobile {
+        display: none;
+      }
     }
 
     .social {
@@ -35,6 +37,14 @@
         fill: orange;
         width: 40px;
         height: 40px;
+        transform: scale(1);
+        transition: transform 250ms linear, fill 250ms linear;
+      }
+
+      .focus:focus,
+      .focus:hover {
+        fill: #f2f5ea;
+        transform: scale(1.2);
       }
     }
   }

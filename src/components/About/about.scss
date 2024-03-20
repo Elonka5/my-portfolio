@@ -8,70 +8,186 @@
   .wrapper {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     gap: 50px;
+    margin-bottom: 78px;
 
-    .skillsContainer {
-      padding-top: 60px;
-    }
-  }
-
-  .aboutContainer {
-    // padding-top: 60px;
-    max-width: 630px;
-    // padding-bottom: 330px;
-
-    p {
-      color: gray;
-      font-size: 20px;
-    }
-
-    h2 {
-      margin-bottom: 28px;
-    }
-  }
-
-  .skillsList {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    max-width: 630px;
-    gap: 20px;
-
-    p {
-      color: gray;
-      font-size: 14px;
-      text-align: center;
-    }
-
-    li {
+    @include mobile {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: #212429;
-      box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-      border-radius: 12px;
-      width: 110px;
-      height: 110px;
-      padding: 8px 0;
+      margin-bottom: 24px;
+      gap: 72px;
     }
 
-    .imgWrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 12px;
-      //   width: 90px;
-      //   height: 90px;
-      border-radius: 12px;
-      cursor: pointer;
+    .skillsContainer {
+      padding-top: 88px;
 
-      img {
-        width: 70px;
-        height: 70px;
+      @include mobile {
+        padding-top: 14px;
       }
+
+      h2 {
+        font-size: 72px;
+        margin-bottom: 28px;
+
+        @include mobile {
+          font-size: 32px;
+          text-align: center;
+        }
+      }
+    }
+
+    .aboutContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding-top: 88px;
+      padding-left: 30px;
+      max-width: 630px;
+
+      @include mobile {
+        gap: 14px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      p {
+        color: gray;
+        font-size: 20px;
+        margin-bottom: 44px;
+
+        @include mobile {
+          font-size: 14px;
+        }
+      }
+
+      h2 {
+        font-size: 72px;
+
+        @include mobile {
+          font-size: 32px;
+          text-align: center;
+        }
+      }
+    }
+
+    .skillsList {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      max-width: 630px;
+      gap: 20px;
+
+      @include mobile {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      p {
+        color: #f2f5ea;
+        font-size: 14px;
+        text-align: center;
+
+        @include mobile {
+          display: none;
+        }
+      }
+
+      li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #3f424a;
+        box-shadow: 0px 10px 13px -7px #000000,
+          5px 5px 15px 5px rgba(0, 0, 0, 0);
+        border-radius: 12px;
+        width: 110px;
+        height: 110px;
+        padding: 8px 0;
+        transform: scale(1);
+        transition: transform 250ms linear, background-color 250ms linear;
+        cursor: pointer;
+
+        @include mobile {
+          width: 60px;
+          height: 60px;
+        }
+
+        &:hover,
+        &:focus {
+          background-color: #212429;
+          transform: scale(1.2);
+        }
+      }
+
+      .imgWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 12px;
+        border-radius: 12px;
+
+        @include mobile {
+          margin-bottom: 0;
+        }
+
+        img {
+          width: 60px;
+          height: 60px;
+
+          @include mobile {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+  .mottoWrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 18px;
+
+    .mottoText {
+      color: #2c363f;
+      font-size: 28px;
+
+      @include mobile {
+        font-size: 24px;
+      }
+    }
+
+    .mottoTextSecond {
+      font-size: 18px;
+      color: gray;
+    }
+  }
+  .linkResume {
+    padding: 20px;
+    text-align: center;
+    border: none;
+    background-color: orange;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 180px;
+    transition: background-color, color 250ms linear;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: #212429;
+      color: #f2f5ea;
+    }
+
+    @include mobile {
+      padding: 10px;
+      width: 140px;
+      font-weight: 400;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
