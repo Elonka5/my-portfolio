@@ -60,6 +60,11 @@
           cursor: pointer;
           font-weight: 700;
           z-index: 1;
+
+          @include mobile {
+            font-weight: 400;
+            padding: 18px 10px;
+          }
         }
       }
       img {
@@ -75,10 +80,12 @@
     right: 0;
 
     @include mobile {
-      height: 50%;
+      // height: 50%;
+      height: auto;
       width: 100%;
       top: unset;
-      bottom: 0;
+      // bottom: 0;
+      bottom: -42px;
     }
 
     img {
