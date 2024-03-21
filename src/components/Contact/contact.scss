@@ -72,10 +72,11 @@
           border: 1px solid white;
           color: white;
           border-radius: 5px;
-          max-height: 80px;
+          max-height: none;
 
           @include mobile {
             padding: 10px;
+            max-height: 80px;
           }
         }
 

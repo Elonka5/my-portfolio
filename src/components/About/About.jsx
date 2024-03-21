@@ -32,7 +32,7 @@ const About = () => {
     >
       <div className="wrapper">
         <div className="aboutContainer">
-          <motion.h2 variants={variants}>About Me</motion.h2>
+          <h2>About Me</h2>
           <p>{text}</p>
           <a
             href="Elona_Savchenko_Junior_Fullstack_developer.pdf"
@@ -44,7 +44,7 @@ const About = () => {
           </a>
         </div>
         <div className="skillsContainer">
-          <motion.h2 variants={variants}>My skills</motion.h2>
+          <h2>My skills</h2>
           <ul className="skillsList">
             {skills.map((skill) => (
               <li key={skill.id}>

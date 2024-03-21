@@ -64,7 +64,7 @@ const Single = ({ item }) => {
             <img src={item.img} alt="" />
           </div>
           <motion.div className="textContainer" style={{ y }}>
-            <h2>{item.title}</h2>
+            <h3>{item.title}</h3>
             <p>{item.descr}</p>
             <div className="linksWrapper">
               <a href={item.urlLive} target="_blank" rel="noopener noreferrer">
@@ -97,7 +97,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>Featured Works</h1>
+        <h2>Featured Works</h2>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map((item) => (
