@@ -35,7 +35,7 @@ const About = () => {
           <h2>About Me</h2>
           <p>{text}</p>
           <a
-            href="Elona_Savchenko_Junior_Fullstack_developer.pdf"
+            href="Elona_Savchenko_Front-end_Developer.pdf"
             tabIndex="0"
             className="linkResume"
             download

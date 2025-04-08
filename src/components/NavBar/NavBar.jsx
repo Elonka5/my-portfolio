@@ -2,6 +2,7 @@ import SideBar from "../SideBar/SideBar";
 import "./navbar.scss";
 import { motion } from "framer-motion";
 import { FaFacebook } from "react-icons/fa";
+import { FaTelegram } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 
@@ -19,12 +20,12 @@ const NavBar = () => {
         </motion.span>
         <div className="social">
           <a
-            href="https://www.facebook.com/Elon4ik?locale=uk_UA"
+            href="https://t.me/elonka"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="link to Facebook"
           >
-            <FaFacebook tabindex="0" className="focus" />
+            <FaTelegram tabindex="0" className="focus" />
           </a>
           <a
             href="https://www.linkedin.com/in/elona-savchenko-a9a2b586/"

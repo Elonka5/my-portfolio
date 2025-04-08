@@ -10,7 +10,26 @@ const items = [
   //     descr: "Harvest Shop website with responsive layout and animation.",
   //   },
   {
+    id: 1,
+    title: "VI-3",
+    img: "https://res.cloudinary.com/delucxgla/image/upload/v1744102385/0e456032-7712-4510-b2a7-9128226995c3_wdowmw.png",
+    descr:
+      "Adaptive website to showcase doors, windows, and related products,featuring a minimalist design for easy product exploration.",
+    urlLive: "https://vi-3.vercel.app/en",
+    // urlCode: "https://github.com/Elonka5/learn-lingo",
+  },
+  {
     id: 2,
+    title: "Envent",
+    img: "https://res.cloudinary.com/delucxgla/image/upload/v1744102407/05733877-91fe-4a2d-803c-86bcbd061fe6_ceh2iq.png",
+    descr:
+      "Adaptive multilingual website for an HVAC company.",
+    urlLive: "https://envent.vercel.app/en",
+    // urlCode: "https://github.com/Elonka5/learn-lingo",
+  },
+
+  {
+    id: 3,
     title: "Cinemania",
     img: "https://res.cloudinary.com/delucxgla/image/upload/v1710497818/Hero_bdfqu3.png",
     descr:
@@ -19,7 +38,7 @@ const items = [
     urlCode: "https://github.com/Andre29839/error-404_team_name_not_found",
   },
   {
-    id: 3,
+    id: 4,
     title: "Money Guard",
     img: "https://res.cloudinary.com/delucxgla/image/upload/v1710316558/Money_Guard_tdkosr.png",
     descr:
@@ -28,7 +47,7 @@ const items = [
     urlCode: "https://github.com/Andre29839/Props_Patrol",
   },
   {
-    id: 4,
+    id: 5,
     title: "Water Tracker",
     img: "https://res.cloudinary.com/delucxgla/image/upload/v1710316599/water_tracker_user_tsefbw.jpg",
     descr:
@@ -37,7 +56,7 @@ const items = [
     urlCode: "https://github.com/yurii2007/water-tracker",
   },
   {
-    id: 5,
+    id: 6,
     title: "Learn Lingo",
     img: "https://res.cloudinary.com/delucxgla/image/upload/v1710316649/Learn_Lingo_u5ovqq.png",
     descr:
@@ -70,9 +89,9 @@ const Single = ({ item }) => {
               <a href={item.urlLive} target="_blank" rel="noopener noreferrer">
                 See Demo
               </a>
-              <a href={item.urlCode} target="_blank" rel="noopener noreferrer">
+              {/* <a href={item.urlCode} target="_blank" rel="noopener noreferrer">
                 View Code
-              </a>
+              </a> */}
             </div>
           </motion.div>
         </div>

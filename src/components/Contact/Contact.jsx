@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useRef, useState } from "react";
-import "./contact.scss";
 import { motion } from "framer-motion";
+import "./contact.scss";
 import emailjs from "@emailjs/browser";
 
 const variants = {
